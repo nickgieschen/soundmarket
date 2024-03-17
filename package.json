@@ -1,0 +1,50 @@
+{
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=21"
+  },
+  "dependencies": {
+    "@adminjs/fastify": "^4.1.2",
+    "@adminjs/sql": "^2.2.1",
+    "@fastify/autoload": "^5.8.0",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/csrf-protection": "^6.4.1",
+    "@fastify/env": "^4.3.0",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/postgres": "^5.2.2",
+    "@fastify/under-pressure": "^8.3.0",
+    "add": "^2.0.6",
+    "adminjs": "^7.7.2",
+    "fastify": "^4.26.1",
+    "fastify-plugin": "^4.5.1",
+    "kysely": "^0.27.3",
+    "pg": "^8.11.3",
+    "tslib": "^2.6.2",
+    "yarn": "^1.22.22"
+  },
+  "devDependencies": {
+    "@jgoz/esbuild-plugin-typecheck": "^3.1.1",
+    "@types/node": "^20.11.27",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.20.2",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "fastify-cli": "^6.1.1",
+    "fastify-tsconfig": "^2.0.0",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.0",
+    "npm": "^10.5.0",
+    "npm-run-all": "^4.1.5",
+    "tap": "^18.7.1",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.2"
+  },
+  "scripts": {
+    "build": "node build.js -b",
+    "start": "node dist/index.js",
+    "dev:watch": "node build.js -w",
+    "dev:start": "node --watch dist/index.js",
+    "dev": "npm-run-all -r build -p dev:watch dev:start"
+  }
+}
