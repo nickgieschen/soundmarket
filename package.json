@@ -20,6 +20,7 @@
     "fastify-plugin": "^4.5.1",
     "kysely": "^0.27.3",
     "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.2",
     "tslib": "^2.6.2",
     "yarn": "^1.22.22"
   },
